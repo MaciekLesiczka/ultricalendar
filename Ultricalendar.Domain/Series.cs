@@ -9,7 +9,7 @@ namespace Ultricalendar.Domain
         private readonly int _id;
         private readonly Recurrence _recurrence;
 
-        private readonly SortedDictionary<LocalDate, Event> _shifts = new SortedDictionary<LocalDate, Event>();
+        private readonly Dictionary<LocalDate, Event> _shifts = new Dictionary<LocalDate, Event>();
 
         public Series(int id, Recurrence recurrence)
         {
