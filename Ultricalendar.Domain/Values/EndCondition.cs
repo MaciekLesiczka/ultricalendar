@@ -2,7 +2,7 @@
 using NodaTime;
 using OneOf;
 
-namespace Ultricalendar.Domain
+namespace Ultricalendar.Domain.Values
 {
     public abstract class EndCondition
     {

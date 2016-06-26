@@ -1,4 +1,4 @@
-﻿namespace Ultricalendar.Domain
+﻿namespace Ultricalendar.Domain.Values
 {
     public class UserId
     {

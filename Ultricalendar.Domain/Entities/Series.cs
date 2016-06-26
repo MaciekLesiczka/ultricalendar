@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using NodaTime;
+using Ultricalendar.Common;
+using Ultricalendar.Domain.Values;
 
-namespace Ultricalendar.Domain
+namespace Ultricalendar.Domain.Entities
 {
     public class Series
     {
@@ -40,30 +42,6 @@ namespace Ultricalendar.Domain
                     yield return @event;                    
                 }                    
             }
-        }
-    }
-
-    public class Event
-    {
-        private readonly int _id;
-        private readonly LocalDate _date;
-
-
-
-        public Event( int id, LocalDate date)
-        {
-            _id = id;
-            _date = date;
-        }
-
-        public int Id
-        {
-            get { return _id; }
-        }
-
-        public LocalDate Date
-        {
-            get { return _date; }
         }
     }
 }

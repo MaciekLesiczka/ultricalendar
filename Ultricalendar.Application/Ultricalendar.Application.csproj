@@ -51,6 +51,10 @@
       <Project>{bcddb37a-56ed-4520-8222-95bc399746cc}</Project>
       <Name>Ultricalendar.Application.Interfaces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Ultricalendar.Common\Ultricalendar.Common.csproj">
+      <Project>{e986e7ee-389d-45e2-8aa0-5bdc4aac1a81}</Project>
+      <Name>Ultricalendar.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Ultricalendar.DataAccess.Interfaces\Ultricalendar.DataAccess.Interfaces.csproj">
       <Project>{c5ade745-4acf-4a46-864a-8a6afced7744}</Project>
       <Name>Ultricalendar.DataAccess.Interfaces</Name>

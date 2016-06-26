@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultricalendar.DataAccess.In
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultricalendar.Application.Interfaces", "Ultricalendar.Application.Interfaces\Ultricalendar.Application.Interfaces.csproj", "{BCDDB37A-56ED-4520-8222-95BC399746CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultricalendar.Common", "Ultricalendar.Common\Ultricalendar.Common.csproj", "{E986E7EE-389D-45E2-8AA0-5BDC4AAC1A81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{BCDDB37A-56ED-4520-8222-95BC399746CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCDDB37A-56ED-4520-8222-95BC399746CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCDDB37A-56ED-4520-8222-95BC399746CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E986E7EE-389D-45E2-8AA0-5BDC4AAC1A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E986E7EE-389D-45E2-8AA0-5BDC4AAC1A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E986E7EE-389D-45E2-8AA0-5BDC4AAC1A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E986E7EE-389D-45E2-8AA0-5BDC4AAC1A81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

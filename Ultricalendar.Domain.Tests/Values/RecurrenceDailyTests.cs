@@ -1,8 +1,9 @@
 using System.Linq;
 using NodaTime;
+using Ultricalendar.Domain.Values;
 using Xunit;
 
-namespace Ultricalendar.Domain.Tests
+namespace Ultricalendar.Domain.Tests.Values
 {
     public class RecurrenceDailyTests
     {

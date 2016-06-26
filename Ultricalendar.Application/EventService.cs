@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Ultricalendar.Application.Interfaces;
+using Ultricalendar.Common;
 using Ultricalendar.DataAccess.Interfaces;
-using Ultricalendar.Domain;
+using Ultricalendar.Domain.Values;
 
 namespace Ultricalendar.Application
 {

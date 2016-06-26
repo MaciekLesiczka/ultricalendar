@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
-using Ultricalendar.Domain;
+using Ultricalendar.Common;
+using Ultricalendar.Domain.Entities;
+using Ultricalendar.Domain.Values;
 
 namespace Ultricalendar.DataAccess.Interfaces
 {

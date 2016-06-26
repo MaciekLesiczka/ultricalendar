@@ -1,6 +1,6 @@
 ﻿using NodaTime;
 
-namespace Ultricalendar.Domain
+namespace Ultricalendar.Common
 {
     public class DateRange
     {

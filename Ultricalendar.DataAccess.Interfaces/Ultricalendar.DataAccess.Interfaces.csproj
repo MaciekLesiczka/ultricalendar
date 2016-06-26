@@ -43,6 +43,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Ultricalendar.Common\Ultricalendar.Common.csproj">
+      <Project>{e986e7ee-389d-45e2-8aa0-5bdc4aac1a81}</Project>
+      <Name>Ultricalendar.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Ultricalendar.Domain\Ultricalendar.Domain.csproj">
       <Project>{0c807ddc-9b6d-4a08-b545-0e5872361466}</Project>
       <Name>Ultricalendar.Domain</Name>

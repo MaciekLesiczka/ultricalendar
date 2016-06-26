@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using NodaTime;
 
-namespace Ultricalendar.Domain
+namespace Ultricalendar.Domain.Values
 {
     public abstract partial class Recurrence
     {

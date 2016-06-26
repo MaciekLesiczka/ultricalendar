@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using NodaTime;
 
-namespace Ultricalendar.Domain
+namespace Ultricalendar.Domain.Values
 {
     /// <summary>
     /// Read-only model that represents various scheduling patterns for recurring events.
