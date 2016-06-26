@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultricalendar.Extensions", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultricalendar.Extensions.Tests", "Ultricalendar.Extensions.Tests\Ultricalendar.Extensions.Tests.csproj", "{3F542964-14A6-4366-88E2-4A2AD5E6B6D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultricalendar.Application", "Ultricalendar.Application\Ultricalendar.Application.csproj", "{F804D7FB-4770-4270-9D22-B5044BB17F31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultricalendar.DataAccess.Interfaces", "Ultricalendar.DataAccess.Interfaces\Ultricalendar.DataAccess.Interfaces.csproj", "{C5ADE745-4ACF-4A46-864A-8A6AFCED7744}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultricalendar.Application.Interfaces", "Ultricalendar.Application.Interfaces\Ultricalendar.Application.Interfaces.csproj", "{BCDDB37A-56ED-4520-8222-95BC399746CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +39,18 @@ Global
 		{3F542964-14A6-4366-88E2-4A2AD5E6B6D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F542964-14A6-4366-88E2-4A2AD5E6B6D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F542964-14A6-4366-88E2-4A2AD5E6B6D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F804D7FB-4770-4270-9D22-B5044BB17F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F804D7FB-4770-4270-9D22-B5044BB17F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F804D7FB-4770-4270-9D22-B5044BB17F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F804D7FB-4770-4270-9D22-B5044BB17F31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5ADE745-4ACF-4A46-864A-8A6AFCED7744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5ADE745-4ACF-4A46-864A-8A6AFCED7744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5ADE745-4ACF-4A46-864A-8A6AFCED7744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5ADE745-4ACF-4A46-864A-8A6AFCED7744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCDDB37A-56ED-4520-8222-95BC399746CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCDDB37A-56ED-4520-8222-95BC399746CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCDDB37A-56ED-4520-8222-95BC399746CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCDDB37A-56ED-4520-8222-95BC399746CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

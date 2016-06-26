@@ -90,7 +90,6 @@ namespace Ultricalendar.Domain
             return date + _periodFromNumber(Step);
         }
 
-        protected abstract LocalDate FirstEventSince(LocalDate date);
-      
+        protected abstract LocalDate FirstEventSince(LocalDate date);      
     }
 }

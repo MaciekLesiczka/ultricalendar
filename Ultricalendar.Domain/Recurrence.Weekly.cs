@@ -73,7 +73,7 @@ namespace Ultricalendar.Domain
 
             protected override LocalDate Next(LocalDate eventDate)
             {
-                //we have a bunch of O(n) lookups here.. but perfoemance shouldn't be an issue however since _dayOfWeeks is really small list - max 7 elements.
+                //we have a bunch of O(n) lookups here.. but performance shouldn't be an issue since _dayOfWeeks is really small list.
                 var indexOf = _dayOfWeeks.IndexOf(eventDate.IsoDayOfWeek);
 
                 if (indexOf < _dayOfWeeks.Count - 1) //there are still some events in this week
