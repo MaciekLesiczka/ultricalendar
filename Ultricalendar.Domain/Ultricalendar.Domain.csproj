@@ -56,6 +56,8 @@
   <ItemGroup>
     <Compile Include="EndCondition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recurrence.Yearly.cs" />
+    <Compile Include="Recurrence.Daily.cs" />
     <Compile Include="Recurrence.Monthly.cs" />
     <Compile Include="Recurrence.Weekly.cs" />
     <Compile Include="Recurrence.cs" />

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using NodaTime;
 
 namespace Ultricalendar.Domain
@@ -31,6 +32,9 @@ namespace Ultricalendar.Domain
             get { return _startDate; }
         }
 
+        /// <summary>
+        /// Is null if recurrence is ininite.
+        /// </summary>
         public LocalDate? EndDate
         {
             get
@@ -52,20 +56,41 @@ namespace Ultricalendar.Domain
             get { return _step; }
         }
 
+        public IEnumerable<LocalDate> GetEventsSince(LocalDate date)
+        {
+            var eventDate = FirstEventSince(date);
+            var endDate = EndDate;
+
+            Func<LocalDate, bool> outSideRange = e => endDate.HasValue && endDate < e;
+            if (outSideRange(eventDate))
+            {
+                yield break;
+            }
+            yield return eventDate;
+
+            while (true)
+            {
+                eventDate = Next(eventDate);
+                if (outSideRange(eventDate))
+                {
+                    break;
+                }
+                yield return eventDate;
+            }
+        }
+
         protected virtual LocalDate GetByOrdinal(int n)
         {
             var delta = (n - 1)*Step;            
             return StartDate + _periodFromNumber(delta);
         }
 
-        public class Daily : Recurrence
+        protected virtual LocalDate Next(LocalDate date)
         {
-            public Daily(LocalDate startDate, int step, EndCondition endCondition) : base(startDate, step, endCondition, Period.FromDays) { }            
+            return date + _periodFromNumber(Step);
         }
 
-        public class Yearly : Recurrence
-        {
-            public Yearly(LocalDate startDate, int step, EndCondition endCondition) : base(startDate, step, endCondition, Period.FromYears) { }
-        }
+        protected abstract LocalDate FirstEventSince(LocalDate date);
+      
     }
 }

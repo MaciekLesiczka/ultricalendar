@@ -32,6 +32,11 @@ namespace Ultricalendar.Domain
 
                 return result;
             }
+
+            protected override LocalDate FirstEventSince(LocalDate date)
+            {
+                throw new System.NotImplementedException();
+            }
         }  
     }
 }
