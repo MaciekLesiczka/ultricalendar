@@ -63,7 +63,6 @@
     <Compile Include="Values\Recurrence.Weekly.cs" />
     <Compile Include="Values\Recurrence.cs" />
     <Compile Include="Entities\Series.cs" />
-    <Compile Include="Values\UserId.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

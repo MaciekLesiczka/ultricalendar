@@ -9,5 +9,5 @@ namespace Ultricalendar.Application.Interfaces
         public int SerieId { get; set; }
 
         public LocalDate LocalDate { get; set; }
-    }
+    } 
 }

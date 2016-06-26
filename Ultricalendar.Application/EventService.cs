@@ -3,20 +3,21 @@ using System.Linq;
 using Ultricalendar.Application.Interfaces;
 using Ultricalendar.Common;
 using Ultricalendar.DataAccess.Interfaces;
-using Ultricalendar.Domain.Values;
 
 namespace Ultricalendar.Application
 {
-    public class EventService
+    internal class EventService : IEventService
     {
         private readonly ISerieRepository _serieRepository;
+        private readonly IEventRepository _eventRepository;
 
-        public EventService(ISerieRepository serieRepository)
+        public EventService(ISerieRepository serieRepository, IEventRepository eventRepository)
         {
             _serieRepository = serieRepository;
+            _eventRepository = eventRepository;
         }
 
-        public List<EventDto> FindUserEvents(UserId userId, DateRange dateRange)
+        public List<EventDto> FindUserEvents(int userId, DateRange dateRange)
         {
             return _serieRepository
                 .FindBy(userId, dateRange)
@@ -24,6 +25,13 @@ namespace Ultricalendar.Application
                 {
                     Id = e.Id,
                     SerieId = s.Id,
+                    LocalDate = e.Date
+                }))
+                .Concat(_eventRepository.FindSingleEvents(userId, dateRange)
+                .Select(e => new EventDto
+                {
+                    Id = e.Id,
+
                     LocalDate = e.Date
                 }))
                 .ToList();

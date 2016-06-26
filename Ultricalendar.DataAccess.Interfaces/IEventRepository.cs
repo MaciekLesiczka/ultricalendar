@@ -4,8 +4,8 @@ using Ultricalendar.Domain.Entities;
 
 namespace Ultricalendar.DataAccess.Interfaces
 {
-    public interface ISerieRepository
+    public interface IEventRepository
     {
-        List<Series> FindBy(int userId, DateRange dateRange);
+        List<Event> FindSingleEvents(int userId, DateRange dateRange);
     }
 }
