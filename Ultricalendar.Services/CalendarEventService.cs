@@ -8,8 +8,5 @@ namespace Ultricalendar.Services
 {
     public class CalendarEventService
     {
-        public 
     }
-
-
 }
